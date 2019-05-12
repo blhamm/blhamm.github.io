@@ -1,0 +1,89 @@
+body, html {
+	font-family: 'Lato', sans-serif;
+	height: 100%;
+	background: #efefef;
+}
+
+#tri {
+	width: 130px;
+	height: 111px;
+	background: url('../img/tri.png') top center no-repeat;
+	background-size: contain;
+}
+#intro {
+	background: url('../img/stardust_@2X.png') repeat;
+	width: 100%;
+}
+
+@-webkit-keyframes arrow-rotate {
+  100% { opacity: 1; 
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -0-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+  
+}
+
+#what-i-do {
+	background: transparent;
+	-webkit-transition: 300ms ease-in-out all;
+    -moz-transition: 300ms ease-in-out all;
+    -o-transition: 300ms ease-in-out all;
+    transition: 300ms ease-in-out all;
+}
+
+#what-i-do:hover {
+	background: #48c4b7;
+	-webkit-transform: background;
+	-moz-transform: background;
+	-ms-transform: background;
+	-o-transform: background;
+	transform: background;
+}
+
+#what-i-do i {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+
+	-webkit-transition: 300ms ease-in-out all;
+    -moz-transition: 300ms ease-in-out all;
+    -o-transition: 300ms ease-in-out all;
+    transition: 300ms ease-in-out all;
+}
+
+#what-i-do:hover i {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+
+}
+
+h1 {
+	color: #f05360;
+	font-weight: 900
+}
+
+h2 {
+	/*color: #48c4b7;*/
+	font-weight: 300;
+	color: #e7e7e7;
+}
+
+p {
+	color: #e7e7e7;
+}
+#me {
+	background: url('../img/me2.jpg') center center no-repeat;
+	background-size: cover;
+	/*background-clip: border-box;*/
+	width: 200px;
+	height: 200px;
+	border-radius: 10000px;
+	border: .75rem solid #bbbcb6;
+}
