@@ -1,6 +1,7 @@
 var intro = document.getElementById('intro');
 var windowHeight, windowWidth
 var me = document.getElementById('me');
+var overview = document.getElementById('overview');
 
 function SmoothScrollTo(e, time, where) {
     var eAmt = e.getBoundingClientRect().top / 100;
@@ -20,6 +21,10 @@ function scroll(eAmt, where = "center") {
 
 function scrollToSalutaion() {
 	SmoothScrollTo(me, 325, "top");
+}
+
+function scrollToTop() {
+	SmoothScrollTo(intro, 325, "top");
 }
 
 function getCurrentWindowDimensions() {

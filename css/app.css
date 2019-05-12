@@ -4,12 +4,6 @@ body, html {
 	background: #efefef;
 }
 
-#tri {
-	width: 130px;
-	height: 111px;
-	background: url('../img/tri.png') top center no-repeat;
-	background-size: contain;
-}
 #intro {
 	background: url('../img/stardust_@2X.png') repeat;
 	width: 100%;
@@ -79,11 +73,18 @@ p {
 	color: #e7e7e7;
 }
 #me {
-	background: url('../img/me2.jpg') center center no-repeat;
+	background: url('../img/me.jpg') center center no-repeat;
 	background-size: cover;
 	/*background-clip: border-box;*/
 	width: 200px;
 	height: 200px;
 	border-radius: 10000px;
-	border: .75rem solid #bbbcb6;
+	border: .75rem solid #d5d5d5;
+}
+.bar .fill {
+	background-image:
+	    linear-gradient(
+	      to right, 
+	      #c4b748, #48c4b7
+	    );
 }
