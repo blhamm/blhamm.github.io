@@ -39,7 +39,7 @@ function resize() {
 }
 
 //listen for resize event.
-window.onresize = resize;
+// window.onresize = resize;
 
 // initalize intro dimensions
 resize();
