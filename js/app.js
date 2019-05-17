@@ -12,19 +12,19 @@ function SmoothScrollTo(e, time, where) {
     }
 }
 
-function scroll(eAmt, where = "center") {
-    if(where == "center" || where == "")
+function scroll(eAmt, where = "top") {
+    if(where == "center")
         window.scrollBy(0, eAmt / 2);
-    if (where == "top")
+    if (where == "top" || where == "")
         window.scrollBy(0, eAmt);
 }
 
 function scrollToSalutaion() {
-	SmoothScrollTo(me, 325, "top");
+	SmoothScrollTo(me, 325);
 }
 
 function scrollToTop() {
-	SmoothScrollTo(intro, 325, "top");
+	SmoothScrollTo(intro, 325);
 }
 
 function getCurrentWindowDimensions() {
