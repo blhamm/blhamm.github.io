@@ -3,28 +3,31 @@ var windowHeight, windowWidth
 var me = document.getElementById('me');
 var overview = document.getElementById('overview');
 
-function SmoothScrollTo(e, time, where) {
+console.log(me.getBoundingClientRect().top);
+console.log(intro.getBoundingClientRect().top / 100);
+
+function SmoothScrollTo(e, time) {
     var eAmt = e.getBoundingClientRect().top / 100;
+    console.log(eAmt);
     var curTime = 0;
     while (curTime <= time) {
-        window.setTimeout(scroll, curTime, eAmt, where);
+        setTimeout(scroll, curTime, eAmt);
         curTime += time / 100;
+        // console.log(curTime);
     }
 }
 
-function scroll(eAmt, where = "top") {
-    if(where == "center")
-        window.scrollBy(0, eAmt / 2);
-    if (where == "top" || where == "")
-        window.scrollBy(0, eAmt);
+function scroll(eAmt) {
+    console.log(eAmt);
+    window.scrollBy(0, eAmt);
 }
 
 function scrollToSalutaion() {
-	SmoothScrollTo(me, 325);
+	SmoothScrollTo(me, 333);
 }
 
 function scrollToTop() {
-	SmoothScrollTo(intro, 325);
+	SmoothScrollTo(intro, 333);
 }
 
 function getCurrentWindowDimensions() {
