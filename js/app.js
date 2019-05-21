@@ -3,37 +3,33 @@ var windowHeight, windowWidth
 var me = document.getElementById('me');
 var overview = document.getElementById('overview');
 
-console.log(me.getBoundingClientRect().top);
 console.log(intro.getBoundingClientRect().top / 100);
 
 function SmoothScrollTo(e, time) {
     var eAmt = e.getBoundingClientRect().top / 100;
     console.log(eAmt);
     var curTime = 0;
-    while (curTime <= time) {
+    while (curTime < time) {
         setTimeout(scroll, curTime, eAmt);
         curTime += time / 100;
-        // console.log(curTime);
     }
 }
 
 function scroll(eAmt) {
-    console.log(eAmt);
     window.scrollBy(0, eAmt);
 }
 
 function scrollToSalutaion() {
-	SmoothScrollTo(me, 333);
+	SmoothScrollTo(me, 333.333333);
 }
 
 function scrollToTop() {
-	SmoothScrollTo(intro, 333);
+	SmoothScrollTo(intro, 333.333333);
 }
 
 function getCurrentWindowDimensions() {
 	windowHeight = window.innerHeight;
 	windowWidth = window.innerWidth;
-	console.log(windowWidth + ' x ' + windowHeight);
 }
 
 function resize() {
